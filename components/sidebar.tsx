@@ -29,7 +29,7 @@ export const Sidebar = ({
         {
             icon: HiHome,
             label: 'Home',
-            active: pathname !== '/search',
+            active: pathname === '/',
             href: '/',
         },
         {
@@ -37,7 +37,13 @@ export const Sidebar = ({
             label: 'Search',
             active: pathname === '/search',
             href: '/search',
-        }
+        },
+        {
+            icon: AiOutlineHeart,
+            label: 'Liked',
+            active: pathname === '/liked',
+            href: '/liked',
+        },
     ], [pathname]);
 
     return ( 
